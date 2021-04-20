@@ -201,37 +201,6 @@
       "comment": "It's your birthday, we're gonna party!",
       "author": "25 Cent",
       "date": "2011-12-02T17:57:28.556094Z"
-    },
-    {
-      "dishId": 0,
-      "author": "Mitanshu",
-      "comment": "This is a Test Comment",
-      "date": "2020-08-23T17:39:12.021Z",
-      "id": 20
-    },
-    {
-      "dishId": "Mitanshu",
-      "rating": "Bhavsar",
-      "author": "12345678",
-      "comment": "mitanshubhavsar90@gmail.com",
-      "date": "2020-08-25T12:17:23.270Z",
-      "id": 21
-    },
-    {
-      "dishId": "Mitanshu",
-      "rating": "Bhavsar",
-      "author": "12345678",
-      "comment": "mitanshubhavsar90@gmail.com",
-      "date": "2020-08-25T12:22:11.184Z",
-      "id": 22
-    },
-    {
-      "dishId": "Mitanshu",
-      "rating": "Bhavsar",
-      "author": "12345678",
-      "comment": "patelpratik4283@gmail.com",
-      "date": "2020-08-25T12:30:17.425Z",
-      "id": 23
     }
   ],
   "promotions": [
