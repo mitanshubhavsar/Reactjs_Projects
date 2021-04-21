@@ -1,0 +1,5 @@
+In Folder of node-examples
+
+1.npm start
+2.node index
+3.node <filename>
