@@ -8,6 +8,7 @@ import {
   Media,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { Fade, Stagger } from 'react-animation-components';
 
 function RenderLeader({ leader }) {
   return (
@@ -102,9 +103,15 @@ function About(props) {
         </div>
         <div className="col-12">
           <Media list>
-            {props.leaders.map((leader) => {
-              return <RenderLeader leader={leader} />;
-            })}
+            <Stagger in>
+              {props.leaders.map((leader) => {
+                return (
+                  <Fade in>
+                    <RenderLeader leader={leader} />
+                  </Fade>
+                );
+              })}
+            </Stagger>
           </Media>
         </div>
       </div>

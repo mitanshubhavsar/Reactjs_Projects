@@ -263,68 +263,6 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
-    },
-    {
-      "firstname": "Mitanshu",
-      "lastname": "Bhavsar",
-      "telnum": "12345678",
-      "email": "mitanshubhavsar90@gmail.com",
-      "agree": true,
-      "contactType": "Email",
-      "message": "scxas",
-      "date": "2020-08-25T15:56:52.009Z",
-      "id": 2
-    },
-    {
-      "firstname": "Mitanshu",
-      "lastname": "Bhavsar",
-      "telnum": "12345678",
-      "email": "trbhavsar24@gmail.com",
-      "agree": true,
-      "contactType": "Email",
-      "message": "xasxsxssx",
-      "date": "2020-08-25T17:29:50.183Z",
-      "id": 3
-    },
-    {
-      "firstname": "Mitanshu",
-      "lastname": "Bhavsar",
-      "telnum": "12345678",
-      "email": "rajukmutha81@gmail.com",
-      "agree": true,
-      "contactType": "Email",
-      "message": "sxcsxcsxc",
-      "id": 4
-    },
-    {
-      "firstname": "Mitanshu",
-      "lastname": "Bhavsar",
-      "telnum": "12345678",
-      "email": "mitanshubhavsar90@gmail.com",
-      "agree": true,
-      "contactType": "Email",
-      "message": "dcdcdcd",
-      "id": 5
-    },
-    {
-      "firstname": "Mitanshu",
-      "lastname": "Bhavsar",
-      "telnum": "12345678",
-      "email": "patelpratik4283@gmail.com",
-      "agree": true,
-      "contactType": "Email",
-      "message": "sxsxa",
-      "id": 6
-    },
-    {
-      "firstname": "Mitanshu",
-      "lastname": "Bhavsar",
-      "telnum": "12345678",
-      "email": "trbhavsar24@gmail.com",
-      "agree": true,
-      "contactType": "Tel.",
-      "message": "axax",
-      "id": 7
     }
   ]
 }

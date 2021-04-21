@@ -16,7 +16,7 @@ import {
   Label,
 } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { FadeTransform, Stagger } from 'react-animation-components';
+import { FadeTransform, Stagger, Fade } from 'react-animation-components';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './Loading';
 import { Link } from 'react-router-dom';
@@ -54,18 +54,20 @@ function RenderComments({ comments, postComment, dishId }) {
           <Stagger in>
             {comments.map((comment) => {
               return (
-                <li key={comment.id}>
-                  <p> {comment.comment} </p>
+                <Fade in>
+                  <li key={comment.id}>
+                    <p> {comment.comment} </p>
 
-                  <p>
-                    --{comment.author},{' '}
-                    {new Intl.DateTimeFormat('en-US', {
-                      year: 'numeric',
-                      month: 'short',
-                      day: '2-digit',
-                    }).format(new Date(Date.parse(comment.date)))}
-                  </p>
-                </li>
+                    <p>
+                      --{comment.author},{' '}
+                      {new Intl.DateTimeFormat('en-US', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: '2-digit',
+                      }).format(new Date(Date.parse(comment.date)))}
+                    </p>
+                  </li>
+                </Fade>
               );
             })}
           </Stagger>
