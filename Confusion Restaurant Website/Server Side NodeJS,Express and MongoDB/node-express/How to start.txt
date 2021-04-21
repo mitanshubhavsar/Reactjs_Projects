@@ -1,0 +1,9 @@
+In Folder of node-examples
+
+1.npm start
+2.node index
+3.node <filename>
+
+To check its response
+ 1.In Browser, go to http://localhost:3000 where server is running.
+ 2.Do GET request, in POSTMAN Application http://localhost:3000. 
