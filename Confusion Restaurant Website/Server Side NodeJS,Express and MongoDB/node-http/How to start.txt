@@ -5,4 +5,13 @@ In Folder of node-examples
 3.node <filename>
 
 To check its response
-In Browser, go to http://localhost:3000 where server is running.
+ 1.In Browser, go to http://localhost:3000 where server is running.
+ 2.Do GET request, in POSTMAN Application http://localhost:3000. 
+
+To Test its functionality:
+ Start the server at localhost:3000
+
+ 1.Test GET request http://localhost:3000 -> serves index.html
+ 2.Test GET request http://localhost:3000/index.html -> serves index.html
+ 3.Test GET request http://localhost:3000/aboutus.html -> serves aboutus.html
+ 4.Test GET/PUT/POST request http://localhost:3000/test.txt -> serves 404 Error
