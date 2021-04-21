@@ -1,0 +1,6 @@
+How to start the project.
+
+1.To start react scripts in confusion-restaurant-website: npm start
+2.To start Json-server to serve data need in Json-Server: json-server --watch db.json -d 2000 -p 3001
+
+here for json server command -d flag for delay in ms and -p for port number at which the server should run
