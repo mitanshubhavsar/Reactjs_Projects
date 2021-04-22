@@ -18,16 +18,16 @@ To Test its functionality:
 
 
 To Test the REST API functionality in POSTMAN Application:
- 1.Test GET request http://localhost:3000/dishes
- 2.Test POST request http://localhost:3000/dishes
+ 1.Test GET request http://localhost:3000/dishes <dishes,leaders,promotions>
+ 2.Test POST request http://localhost:3000/dishes <dishes,leaders,promotions>
 	Body ->raw ->json -> 
 	{"name":"test", "description":"test description"}
 	
 		
- 3.Test PUT request http://localhost:3000/dishes/23 <any dishId>
- 4.Test DELETE request http://localhost:3000/dishes 
- 5.Test GET request http://localhost:3000/dishes/23 <any dishId> 
- 6.Test PUT request http://localhost:3000/dishes/23 <any dishId>
+ 3.Test PUT request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
+ 4.Test DELETE request http://localhost:3000/dishes <dishes,leaders,promotions> 
+ 5.Test GET request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId> 
+ 6.Test PUT request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
 	Body ->raw ->json -> 
 	{"name":"test", "description":"test description"}
- 7.Test DELETE request http://localhost:3000/dishes/23 <any dishId>
+ 7.Test DELETE request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
