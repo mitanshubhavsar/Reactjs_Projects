@@ -1,0 +1,22 @@
+{
+  "name": "confusion_restaurant_website_server",
+  "version": "1.0.0",
+  "description": "Main Server for Confusion Restaurant website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitanshubhavsar/Reactjs_Projects.git"
+  },
+  "author": "Mitanshu Bhavsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitanshubhavsar/Reactjs_Projects/issues"
+  },
+  "homepage": "https://github.com/mitanshubhavsar/Reactjs_Projects#readme",
+  "dependencies": {
+    "express-generator": "^4.16.1"
+  }
+}
