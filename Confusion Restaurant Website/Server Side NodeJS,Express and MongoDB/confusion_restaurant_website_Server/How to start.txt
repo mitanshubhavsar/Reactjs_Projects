@@ -86,5 +86,14 @@ To Check Basic Authentication:
 	keep Server running by npm start;
 	On Any Request GET,POST,PUT,DELETE on http://localhost:3000 Need to Enter Username:- admin, password:-password to access server.
 	On Postman Application go to Authorization -> Type -> Basic Auth -> Enter Username:- admin, password:-password 
+
+To Check Cookies Authentication:
+	keep Server running by npm start;
+	On Postman Application go to Authorization -> Type -> Basic Auth -> Enter Username:- admin, password:-password
+	Notice in Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Cookie is set up)
+	
+	After the cookie is set up we can remove the Authorization fields(Username,password) and still send GET,POST,PUT,DELETE requests which
+	will access server till cookie expires (cookie is passed in Headers of each request). 
+
 	 
 
