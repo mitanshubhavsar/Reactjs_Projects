@@ -104,7 +104,7 @@ To Check Session Basic Authentication:
 	After the session-id is set up we can remove the Authorization fields(Username,password) and still send GET,POST,PUT,DELETE requests which
 	will access server till cookie expires (session-id is passed in Headers of each request). 
 
-To Check Functionality of Signup,Login,Logout
+To Check Functionality of Signup,Login,Logout by Sessions
 	keep Server running by npm start;
 	On Postman Application, 
 	Test POST request http://localhost:3000/users/signup 
@@ -113,6 +113,19 @@ To Check Functionality of Signup,Login,Logout
 	Test POST request http://localhost:3000/users/login and set Authorization -> Type -> Basic Auth -> Enter Username:- xyz, password:-password
 	Test GET request http://localhost:3000/users/logout and check Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Session-id is deleted)
 	
+To Check Functionality of Signup,Login,Logout by Passport
+	keep Server running by npm start;
+	On Postman Application, 
+	Test POST request http://localhost:3000/users/signup 
+		Body ->raw ->json -> 
+		{"username":"xyz", "password":"password"}
+	Test POST request http://localhost:3000/users/login 
+		Body ->raw ->json -> 
+		{"username":"xyz", "password":"password"}
+		Notice in Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Session-id is set up)
+		can send GET,POST,PUT,DELETE requests to dishes,promotions,leaders
+	Test GET request http://localhost:3000/users/logout and check Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Session-id is deleted)
+		
 	
 	
 
