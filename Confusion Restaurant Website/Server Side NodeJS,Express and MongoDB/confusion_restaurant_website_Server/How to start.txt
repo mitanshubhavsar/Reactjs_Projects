@@ -95,5 +95,17 @@ To Check Cookies Authentication:
 	After the cookie is set up we can remove the Authorization fields(Username,password) and still send GET,POST,PUT,DELETE requests which
 	will access server till cookie expires (cookie is passed in Headers of each request). 
 
+To Check Session Authentication:
+	keep Server running by npm start;
+	On Postman Application,
+	Test GET request http://localhost:3000/dishes and set Authorization -> Type -> Basic Auth -> Enter Username:- admin, password:-password 
+	Notice in Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Session-id is set up)
+
+	After the session-id is set up we can remove the Authorization fields(Username,password) and still send GET,POST,PUT,DELETE requests which
+	will access server till cookie expires (session-id is passed in Headers of each request). 
+	
+	
+	
+
 	 
 
