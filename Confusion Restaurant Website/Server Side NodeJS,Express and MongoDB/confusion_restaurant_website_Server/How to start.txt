@@ -81,3 +81,10 @@ To Test the REST API functionality in POSTMAN Application:
  11.Test DELETE request http://localhost:3000/dishes/<DishId>/comments
  12.Test DELETE request http://localhost:3000/dishes/<DishId>/comments/<comment ID>
 
+
+To Check Basic Authentication:
+	keep Server running by npm start;
+	On Any Request GET,POST,PUT,DELETE on http://localhost:3000 Need to Enter Username:- admin, password:-password to access server.
+	On Postman Application go to Authorization -> Type -> Basic Auth -> Enter Username:- admin, password:-password 
+	 
+
