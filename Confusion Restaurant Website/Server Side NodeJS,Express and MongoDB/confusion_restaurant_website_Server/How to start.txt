@@ -22,10 +22,23 @@ To Test the REST API functionality in POSTMAN Application:
 	{"name":"test", "description":"test description"}
 	
 		
- 3.Test PUT request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
- 4.Test DELETE request http://localhost:3000/dishes <dishes,leaders,promotions> 
- 5.Test GET request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId> 
- 6.Test PUT request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
+ 3.Test DELETE request http://localhost:3000/dishes <dishes,leaders,promotions> 
+ 4.Test GET request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId> 
+ 5.Test PUT request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
 	Body ->raw ->json -> 
 	{"name":"test", "description":"test description"}
- 7.Test DELETE request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
+ 6.Test DELETE request http://localhost:3000/dishes <dishes,leaders,promotions>/23 <any dishId>
+
+ For Dishes->Comments
+
+ 7.Test GET request http://localhost:3000/dishes/<DishId>/comments
+ 8.Test GET request http://localhost:3000/dishes/<DishId>/comments/<Comments ID>
+ 9.Test POST request http://localhost:3000/dishes/<DishId>/comments
+	Body ->raw ->json -> 
+	{"rating":"test", "comment":"test description","author":"XYZ"}
+ 10.Test PUT request http://localhost:3000/dishes/<DishId>/comments/<comment ID>
+	Body ->raw ->json -> 
+	{"rating":"test", "comment":"test description","author":"XYZ"}
+ 11.Test DELETE request http://localhost:3000/dishes/<DishId>/comments
+ 12.Test DELETE request http://localhost:3000/dishes/<DishId>/comments/<comment ID>
+
