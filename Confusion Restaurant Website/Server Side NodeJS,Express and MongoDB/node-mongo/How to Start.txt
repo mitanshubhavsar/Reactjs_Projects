@@ -1,0 +1,5 @@
+1.Ensure Your MongoDB Server is Running:
+   In mongodb -> (use Command) mongod --dbpath=data --bind_ip 127.0.0.1
+
+2. Start the script by:
+    In node-mongo-> (use Command) npm start
