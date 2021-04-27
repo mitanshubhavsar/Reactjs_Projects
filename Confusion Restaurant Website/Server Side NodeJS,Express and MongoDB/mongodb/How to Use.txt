@@ -1,0 +1,28 @@
+To start the Mongo DB Server :
+
+   1. Server Side NodeJS,Express and MongoDB -> mongodb -> (use Command) mongod --dbpath=data --bind_ip 127.0.0.1
+
+To start the mongo REPL shell (For giving commands to server) :
+
+   1. Server Side NodeJS,Express and MongoDB -> mongodb -> (use Command) mongo
+
+Exercise To Test: 
+
+  Start running The Mongo REPL shell:
+
+     db              //Output : test
+     use conFusionDB   //Output: Switched to db ConfusionDB	
+     db	               //Output: ConfusionDB
+
+     db.help()        //Give All Available commands
+
+
+
+  create a collection named dishes, and insert a new dish document in the collection:
+	
+      db.dishes.insert({ name: "Uthappizza", description: "Test" });
+
+  
+  Then to print out the dishes in the collection, type:
+
+      db.dishes.find().pretty();
