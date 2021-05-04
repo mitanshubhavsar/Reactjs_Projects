@@ -1,10 +1,12 @@
 In Folder of ConfusionServer
 
 1.npm start
+2. Server Side NodeJS,Express and MongoDB -> mongodb -> (use Command) mongod --dbpath=data --bind_ip 127.0.0.1 //To start mongoDB server
 
 To check its response
  1.In Browser, go to http://localhost:3000 where server is running.
  2.Do GET request, in POSTMAN Application http://localhost:3000.
+
 
 To Test its functionality:
  Start the server at localhost:3000
@@ -125,6 +127,20 @@ To Check Functionality of Signup,Login,Logout by Passport
 		Notice in Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Session-id is set up)
 		can send GET,POST,PUT,DELETE requests to dishes,promotions,leaders
 	Test GET request http://localhost:3000/users/logout and check Header->Cookie or cookies(beside body) or Cookies(below send)->localhost->user (Session-id is deleted)
+
+
+To check User Authentication with passport and json web token 
+	keep Server running by npm start;
+	On Postman Application, 
+	Test GET request http://localhost:3000/<dishes>,<promotions>,<leaders>
+	Test POST,PUT,DELETE request http://localhost:3000/<dishes>,<promotions>,<leaders>  => Unauthorized
+	Test POST request http://localhost:3000/users/signup with same users available (eg. username=Rowdy, password=password) => UserExistsError
+	Test POST request http://localhost:3000/users/login with same users available (note the token you got)
+
+	Now Test POST,PUT,DELETE request http://localhost:3000/<dishes>,<promotions>,<leaders> by adding =>
+		Header -> Authorization -> bearer <token>(got from login) [value] 
+	
+	
 		
 	
 	
