@@ -134,11 +134,24 @@ To check User Authentication with passport and json web token
 	On Postman Application, 
 	Test GET request http://localhost:3000/<dishes>,<promotions>,<leaders>
 	Test POST,PUT,DELETE request http://localhost:3000/<dishes>,<promotions>,<leaders>  => Unauthorized
-	Test POST request http://localhost:3000/users/signup with same users available (eg. username=Rowdy, password=password) => UserExistsError
-	Test POST request http://localhost:3000/users/login with same users available (note the token you got)
+	Test POST request http://localhost:3000/users/signup with same users available through Body ->raw ->json -> (eg. username=XYZ, password=password) => UserExistsError
+	Test POST request http://localhost:3000/users/login with same users available through Body ->raw ->json -> (note the token you got)
 
 	Now Test POST,PUT,DELETE request http://localhost:3000/<dishes>,<promotions>,<leaders> by adding =>
 		Header -> Authorization -> bearer <token>(got from login) [value] 
+
+To check the functionality of Mongoose population 
+	keep Server running by npm start;
+	On Postman Application, 
+	Test POST request http://localhost:3000/users/login with same users available through Body ->raw ->json -> (eg. username=XYZ, password=password,firstname=sdk,lastname=fes) 
+	Test POST request http://localhost:3000/users/login with same users available through Body ->raw ->json -> (note the token you got)
+		Header -> Authorization -> bearer <token>(got from login) [value] 
+	Test GET request http://localhost:3000/dishes/<dishID>/comments
+	Test POST request http://localhost:3000/dishes/<dishID>/comments -> notice the firstname,lastname, username,id populated by itself 
+	Test GET request http://localhost:3000/dishes/<dishID>/comments/<commentId>
+	
+
+	
 	
 	
 		
