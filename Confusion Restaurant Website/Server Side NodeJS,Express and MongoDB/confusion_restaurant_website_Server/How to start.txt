@@ -149,6 +149,23 @@ To check the functionality of Mongoose population
 	Test GET request http://localhost:3000/dishes/<dishID>/comments
 	Test POST request http://localhost:3000/dishes/<dishID>/comments -> notice the firstname,lastname, username,id populated by itself 
 	Test GET request http://localhost:3000/dishes/<dishID>/comments/<commentId>
+
+To check priviledges made for admin (verifyadmin) :
+	keep Server running by npm start;
+	On Postman Application, 
+	set up admin account :- Test POST request http://localhost:3000/users/login with same users available through Body ->raw ->json -> (eg. username=admin, password=password,firstname=sdk,lastname=fes)
+	run the mongo REPL shell (For giving commands to server) : Server Side NodeJS,Express and MongoDB -> mongodb -> (use Command) mongo
+		use command use conFusionDB -> db.users.update({"username":"admin"}, {$set : {"admin": true}})
+
+	Test POST request http://localhost:3000/users/login with same admin account Body ->raw ->json -> (note the token you got)
+		Header -> Authorization -> bearer <token>(got from login) [value]
+	Test GET request http://localhost:3000/users
+	Test POST,PUT,DELETE requst http://localhost:3000/dishes 
+	Test POST,PUT,DELETE requst http://localhost:3000/dishes/<DishId> same for comments
+
+	
+
+    
 	
 
 	

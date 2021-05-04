@@ -1,15 +1,31 @@
 var express = require('express');
-var router = express.Router();
 var User = require('../models/user');
 var passport = require('passport');
 var authenticate = require('../authenticate');
 
+const Users = require('../models/user');
+
+var router = express.Router();
 router.use(express.json());
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
-});
+router.get(
+  '/',
+  authenticate.verifyUser,
+  authenticate.verifyAdmin,
+  (req, res, next) => {
+    Users.find({})
+      .then(
+        (users) => {
+          res.statusCode = 200;
+          res.setHeader('Content-Type', 'application/json');
+          res.json(users);
+        },
+        (err) => next(err)
+      )
+      .catch((err) => next(err));
+  }
+);
 
 router.post('/signup', (req, res, next) => {
   User.register(

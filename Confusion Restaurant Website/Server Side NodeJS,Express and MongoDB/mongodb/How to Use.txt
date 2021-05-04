@@ -26,3 +26,6 @@ Exercise To Test:
   Then to print out the dishes in the collection, type:
 
       db.dishes.find().pretty();
+
+ Modify an account as Admin Account := 
+	db.users.update({"username":"admin"}, {$set : {"admin": true}})
