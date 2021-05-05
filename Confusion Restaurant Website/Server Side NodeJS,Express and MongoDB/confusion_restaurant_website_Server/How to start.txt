@@ -210,6 +210,21 @@ To check the functionality of user signup and authentication through Facebook ( 
 		use conFusionDB   //Output: Switched to db ConfusionDB	
      		db	               //Output: ConfusionDB
 		db.users.find().pretty()  //Output: all users
+
+To check the functionality of adding Favorites :
+	keep Server running by npm start;
+	In Postman Application,
+	Test POST request http://localhost:3000/users/login or on https://localhost:3443/users/login with same admin account Body ->raw ->json -> (note the token you got) [login as admin]
+		Header -> Authorization -> bearer <token>(got from login) [value]
+	Test GET request https://localhost:3443/favorites 
+	Test POST request https://localhost:3443/favorites 
+		body -> raw -> json -> 
+			[ {"-id": "<dishId 1>",
+			  {"_id": "<dishId 2>"
+			]
+	Test POST request https://localhost:3443/favorites/<any dishId you want to add as favorites>
+	Test DELETE request https://localhost:3443/favorites/<any dishId you want to delete as favorites>
+	Test DELETE request https://localhost:3443/favorites -> delete all favorites
 		
 	 			
 
