@@ -167,6 +167,16 @@ To Check the functionality of setting https secure server
 	keep Server running by npm start;
 	Test request on Browser https://localhost:3443 -> proceed to site -> Welcome to express
 	Test request on Browser http://localhost:3000 -> redirect to -> https:localhost:3443 (This ensures you will always access the server on secure port)
+
+To Check the functionality of uploading files:
+	keep Server running by npm start;
+	On Postman Application,
+	Test POST request http://localhost:3000/users/login or on https://localhost:3443/users/login with same admin account Body ->raw ->json -> (note the token you got) [login as admin]
+		Header -> Authorization -> bearer <token>(got from login) [value]
+		if shows error -> postman settings -> SSL verification (off)
+	Test POST request https://localhost:3443/imageUpload then body -> form-data -> key = imageFile (set it to File) -> value => click select Files (choose a file)
+		notice the response in json about uploaded file
+		check the uploaded file in (public\\images\\logo.png) or at path specified in json response  
 	
 
 	
