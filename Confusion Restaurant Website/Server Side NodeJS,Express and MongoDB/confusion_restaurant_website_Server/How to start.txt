@@ -190,7 +190,28 @@ To check the functionality of cors(cross origin resource sharing) :
 		If we try to put other origin value like https://localhost:2000(which not in whitelist(it has 3000,3443 only) will not show any Access-Control-Allow-Origin in response Header.
 	 Test OPTIONS request https://localhost:3443/dishes and set origin(key) = https://localhost:3443
 		Notice Access-Control-Allow-Origin = https://localhost:3443, Access-Control-Allow-Methods = GET,HEAD,PUT,PATCH,POST,DELETE
-	
+
+To check the functionality of user signup and authentication through Facebook ( :
+	keep Server running by npm start;
+	Test GET request on browser to open https://localhost:3443/index.html -> log in Fackbook -> After clicking
+		Inspect -> console -> Notice the auth response and status 
+	In Postman Application,
+	Test GET request on https://localhost:3443/users/facebook/token by adding in Headers 
+		origin(key) = https://localhost:3443(value) and Authorization(key) = Bearer <auth response token>(value)[from inspect]
+			You will be getting message of successfully logging in and return json web token 	
+				OR BY
+	Test GET request on https://localhost:3443/users/facebook/token by adding in Headers
+		origin(key) = https://localhost:3443(value) and access_token(key) = <auth response token>(value)[from inspect] 
+				OR BY
+	Test GET request on https://localhost:3443/users/facebook/token by adding in Headers
+		origin(key) = https://localhost:3443(value) passing access token in params like https://localhost:3443/users/facebook/token?access_token=<auth response token> OR In params -> access_token(key) = <auth response token>(value) 
+
+	Now Check in Mongo REPL shell -> Server Side NodeJS,Express and MongoDB -> mongodb -> (use Command) mongo [for starting it]
+		use conFusionDB   //Output: Switched to db ConfusionDB	
+     		db	               //Output: ConfusionDB
+		db.users.find().pretty()  //Output: all users
+		
+	 			
 
     
 	
