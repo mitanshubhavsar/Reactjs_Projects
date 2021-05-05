@@ -163,6 +163,12 @@ To check priviledges made for admin (verifyadmin) :
 	Test POST,PUT,DELETE requst http://localhost:3000/dishes 
 	Test POST,PUT,DELETE requst http://localhost:3000/dishes/<DishId> same for comments
 
+To Check the functionality of setting https secure server
+	keep Server running by npm start;
+	Test request on Browser https://localhost:3443 -> proceed to site -> Welcome to express
+	Test request on Browser http://localhost:3000 -> redirect to -> https:localhost:3443 (This ensures you will always access the server on secure port)
+	
+
 	
 
     
