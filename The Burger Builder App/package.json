@@ -1,0 +1,19 @@
+{
+  "name": "the-burger-builder-app",
+  "version": "1.0.0",
+  "description": "This is a Burger Builder project to build your own customized burger and order it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitanshubhavsar/Reactjs_Projects.git"
+  },
+  "author": "Mitanshu Bhavsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitanshubhavsar/Reactjs_Projects/issues"
+  },
+  "homepage": "https://github.com/mitanshubhavsar/Reactjs_Projects#readme"
+}
