@@ -176,9 +176,20 @@ To Check the functionality of uploading files:
 		if shows error -> postman settings -> SSL verification (off)
 	Test POST request https://localhost:3443/imageUpload then body -> form-data -> key = imageFile (set it to File) -> value => click select Files (choose a file)
 		notice the response in json about uploaded file
-		check the uploaded file in (public\\images\\logo.png) or at path specified in json response  
-	
+		check the uploaded file in (public\\images\\logo.png) or at path specified in json response 
 
+To check the functionality of cors(cross origin resource sharing) :
+	 keep Server running by npm start;
+	 On Postman Application,
+	 Test GET request http://localhost:3000/dishes <dishes,leaders,promotions> => Observe response Header(below upper Header) 
+		notice Access-Control-Allow-Origin = *  
+	 Test POST request http://localhost:3000/users/login or on https://localhost:3443/users/login with same admin account Body ->raw ->json -> (note the token you got) [login as admin]
+		Header -> Authorization -> bearer <token>(got from login) [value]
+	 Test DELETE request http://localhost:3000/dishes by adding Header -> Authorization -> bearer <token>(got from login) [value] and origin(key) = https://localhost:3443
+		Notice Access-Control-Allow-Origin = https://localhost:3443
+		If we try to put other origin value like https://localhost:2000(which not in whitelist(it has 3000,3443 only) will not show any Access-Control-Allow-Origin in response Header.
+	 Test OPTIONS request https://localhost:3443/dishes and set origin(key) = https://localhost:3443
+		Notice Access-Control-Allow-Origin = https://localhost:3443, Access-Control-Allow-Methods = GET,HEAD,PUT,PATCH,POST,DELETE
 	
 
     
