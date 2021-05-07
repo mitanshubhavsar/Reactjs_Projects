@@ -1,0 +1,16 @@
+In the Folder the_burger_builder_app ;
+	1.npm start
+		(if shows error on npm start) :- Run npm install //installing all packages
+
+	2.Setting up Firebase Project 
+		google firebase -> Go to console -> Add project or (use created one) -> Build -> Realtime Database 
+			Setting Rules : Realtime Database -> Rules 
+					{
+                                          "rules": {
+    
+                                             ".read": "true",  
+                                             ".write": "true",  
+                                           }   
+                                        }
+			then -> Publish
+	
