@@ -14,3 +14,16 @@ In the Folder the_burger_builder_app ;
                                         }
 			then -> Publish
 	
+	3.Setting ingredients for axios get request on Firebase:
+		click on + 
+		name = ingredients
+		click + of ingredients
+		name:bacon value:0
+		name:cheese value:0
+		name:meat value:0
+		name:salad value:0
+
+	4.Checking Post request of axios on Firebase:
+		Add ingredients to your burger => Order Now => continue 
+			Notice orders in Data(firebase) and click + to maximize the data
+	
