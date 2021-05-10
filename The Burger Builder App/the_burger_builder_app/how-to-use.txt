@@ -26,4 +26,5 @@ In the Folder the_burger_builder_app ;
 	4.Checking Post request of axios on Firebase:
 		Add ingredients to your burger => Order Now => continue 
 			Notice orders in Data(firebase) and click + to maximize the data
+
 	
