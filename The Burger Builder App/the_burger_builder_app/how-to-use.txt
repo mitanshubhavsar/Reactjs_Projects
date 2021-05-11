@@ -28,3 +28,13 @@ In the Folder the_burger_builder_app ;
 			Notice orders in Data(firebase) and click + to maximize the data
 
 	
+	5.Setting Authentication on Firebase
+		google firebase -> Authentication -> sign-in method -> Email/Password -> Enable & save
+			
+		  To get the address on where signup users and get a token: 
+			google => firebase rest auth => https://firebase.google.com/docs/reference/rest/auth (Firebase Auth REST API) => Sign up with email / password => Endpoint(copy it and use it in code)
+				in Endpoint => notice [API-KEY] => project settings -> web API key (copy it & paste in endpoint)  
+		then signup with email,password and check the console for response => data => idToken
+		
+
+	
