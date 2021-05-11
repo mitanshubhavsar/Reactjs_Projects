@@ -39,6 +39,23 @@ In the Folder the_burger_builder_app ;
 		  To get the address on where signin users and get a token: 
 			google => firebase rest auth => https://firebase.google.com/docs/reference/rest/auth (Firebase Auth REST API) => Sign in with email / password => Endpoint(copy it and use it in code)
 				in Endpoint => notice [API-KEY] => project settings -> web API key (copy it & paste in endpoint)
+
+	6. To access resources of ingredients to everyone but orders to only authenticated user:
+		google firebase -> Go to console -> rules => 
+			set this rules:
+				{ 
+  				"rules": {
+    
+    					"ingredients": {
+        					".read": "true",
+        					".write": "true"
+      					},
+      					"orders": {
+        					".read": "auth != null",
+          					".write": "auth != null"
+      					  	}
+  				        }   
+				}
 		
 
 	
