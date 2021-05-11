@@ -56,6 +56,10 @@ In the Folder the_burger_builder_app ;
       					  	}
   				        }   
 				}
+		test it by going to orders without loginin => will get error
+
+	7.Check idToken and expirationDate stored in localStorage for keep login of user even after page refresh:
+		console => Application => localStorage => http://localhost:3000 => notice token and expirationDate
 		
 
 	
