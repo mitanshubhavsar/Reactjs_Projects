@@ -70,6 +70,10 @@ In the Folder the_burger_builder_app ;
 						".indexOn": ["userId"]
       					  	}
 		then login 0r signup and go to orders => notice orders data in firebase and user specific orders in application
+
+	9. For Running a test:
+		In the Folder the_burger_builder_app :
+			1.npm test
 		
 
 	
