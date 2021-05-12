@@ -60,6 +60,16 @@ In the Folder the_burger_builder_app ;
 
 	7.Check idToken and expirationDate stored in localStorage for keep login of user even after page refresh:
 		console => Application => localStorage => http://localhost:3000 => notice token and expirationDate
+
+	
+	8.To display user specific orders they have: 
+		Need to set rules in firebase = google firebase -> Go to console -> rules => 
+			in orders => "orders": {
+        					".read": "auth != null",
+          					".write": "auth != null",
+						".indexOn": ["userId"]
+      					  	}
+		then login 0r signup and go to orders => notice orders data in firebase and user specific orders in application
 		
 
 	
