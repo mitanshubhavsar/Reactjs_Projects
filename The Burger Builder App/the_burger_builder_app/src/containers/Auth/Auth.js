@@ -29,6 +29,7 @@ const Auth = (props) => {
       elementConfig: {
         type: 'password',
         placeholder: 'Password',
+        autoComplete: 'on',
       },
       value: '',
       validation: {
