@@ -1,7 +1,9 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { createForms } from 'react-redux-form';
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
+// import logger from 'redux-logger';
+/* To get the state on every action type we use redux-logger & pass it into middleware, we can see
+the state in console*/
 
 import { Dishes } from './dishes';
 import { Comments } from './comments';
@@ -20,7 +22,7 @@ export const ConfigureStore = () => {
         feedback: InitialFeedback,
       }),
     }),
-    applyMiddleware(thunk, logger)
+    applyMiddleware(thunk /*logger*/)
   );
 
   return store;

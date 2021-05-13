@@ -107,7 +107,7 @@ function About(props) {
             <Stagger in>
               {props.leaders.map((leader) => {
                 return (
-                  <Fade in>
+                  <Fade key={leader.id} in>
                     <RenderLeader leader={leader} />
                   </Fade>
                 );
