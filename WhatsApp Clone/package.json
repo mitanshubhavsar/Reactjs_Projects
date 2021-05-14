@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-clone",
+  "version": "1.0.0",
+  "description": "This project consists of whatsapp clone with the help of react js fully responsive website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitanshubhavsar/Reactjs_Projects.git"
+  },
+  "author": "Mitanshu Bhavsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitanshubhavsar/Reactjs_Projects/issues"
+  },
+  "homepage": "https://github.com/mitanshubhavsar/Reactjs_Projects#readme"
+}
