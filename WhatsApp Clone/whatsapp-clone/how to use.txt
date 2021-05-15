@@ -13,3 +13,6 @@ Setting Firebase Cloud Database:
 		Field: name(value) value: Dance Room (value)
 	
 	similarly you can add rooms by clicking on +Add document & can add field by clicking +Add field
+
+To add gmail sign up:
+	go to console => whatsapp-clone(select) => Authentication => sign-in methods => google(provider) enable(status)
