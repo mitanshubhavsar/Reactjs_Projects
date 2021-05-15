@@ -23,11 +23,8 @@ function Chat() {
         .doc(roomId)
         .onSnapshot((snapshot) => setRoomName(snapshot.data().name));
     }
-  }, [roomId]);
-
-  useEffect(() => {
     setSeed(Math.floor(Math.random() * 5000));
-  }, []);
+  }, [roomId]);
 
   const sendMessage = (e) => {
     e.preventDefault();
