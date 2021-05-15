@@ -4,3 +4,12 @@ In whatsapp-clone Folder =>
 To configure Firebase:
 	go to console => whatsapp-clone(select) project => project settings =>
 		general => your apps => SDK setup and configuration => configure
+
+Setting Firebase Cloud Database: 
+	go to console => whatsapp-clone(select) => Firestore Database => Data =>
+	   click on + start collection 
+		for DocumentId : (click on AutoId)
+		collection Id : rooms (value)
+		Field: name(value) value: Dance Room (value)
+	
+	similarly you can add rooms by clicking on +Add document & can add field by clicking +Add field
