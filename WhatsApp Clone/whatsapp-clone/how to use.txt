@@ -1,0 +1,6 @@
+In whatsapp-clone Folder => 
+	1.run npm start 
+
+To configure Firebase:
+	go to console => whatsapp-clone(select) project => project settings =>
+		general => your apps => SDK setup and configuration => configure
