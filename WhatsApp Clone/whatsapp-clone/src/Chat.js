@@ -7,11 +7,12 @@ import {
   SearchOutlined,
   InsertEmoticon,
   Mic,
+  Send,
 } from '@material-ui/icons';
 import { useParams } from 'react-router-dom';
 import db from './firebase';
 import { useStateValue } from './StateProvider';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 function Chat() {
   const [input, setInput] = useState('');
@@ -19,7 +20,8 @@ function Chat() {
   const { roomId } = useParams();
   const [roomName, setRoomName] = useState('');
   const [messages, setMessages] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [sendIcon, setSendIcon] = useState(false);
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     if (roomId) {
@@ -37,6 +39,14 @@ function Chat() {
       );
     setSeed(Math.floor(Math.random() * 5000));
   }, [roomId]);
+
+  useEffect(() => {
+    if (input.length !== 0 && input !== '') {
+      setSendIcon(true);
+    } else {
+      setSendIcon(false);
+    }
+  }, [input]);
 
   const sendMessage = (e) => {
     e.preventDefault();
@@ -77,6 +87,7 @@ function Chat() {
       <div className="chat__body">
         {messages.map((message) => (
           <p
+            key={message.timestamp}
             className={`chat__message ${
               user.displayName === message.name && 'chat__receiver'
             }`}
@@ -102,7 +113,7 @@ function Chat() {
             Send the message
           </button>
         </form>
-        <Mic />
+        {sendIcon ? <Send onClick={sendMessage} /> : <Mic />}
       </div>
     </div>
   );
