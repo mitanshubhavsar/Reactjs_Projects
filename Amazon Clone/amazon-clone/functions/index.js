@@ -37,4 +37,4 @@ app.post('/payments/create', async (request, response) => {
 exports.api = functions.https.onRequest(app);
 
 // Example endpoint
-//http://localhost:5001/clone-16838/us-central1/api (get it from starting the emulator by (command) firebase emulators:start
+// http://localhost:5001/clone-16838/us-central1/api (get it from starting the emulator by (command) firebase emulators:start)
