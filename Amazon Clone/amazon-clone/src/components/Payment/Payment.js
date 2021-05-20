@@ -50,9 +50,11 @@ function Payment() {
           card: elements.getElement(CardElement),
         },
       })
-      .then(({ paymentIntent }) => {
+      .then(({ paymentIntent, error }) => {
         // paymentIntent = payment confirmation
-
+        if (error) {
+          console.log(error.message);
+        }
         db.collection('users')
           .doc(user?.uid)
           .collection('orders')

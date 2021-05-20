@@ -4,8 +4,10 @@ To start the website:
 To start the server side backend:
 	In Functions Folder: firebase emulators:start
 	To view Functions Emulator UI go to => http://localhost:4000/functions (get to see the logs there)
-	The functions would be initialized at endpoint http://localhost:5001/clone-16838/us-central1/api (get it from starting the emulator by (command) firebase emulators:start)
+	The functions would be initialized at endpoint http://localhost:5001/clone-2f9b0/us-central1/api (get it from starting the emulator by (command) firebase emulators:start)
 
 	To setup firebase cloud function backend [type command] firebase init: 
 		=> select the firebase cloud functions option(by pressing spacebar) & (press) Enter
+
+Deployed app https://clone-2f9b0.web.app
 
