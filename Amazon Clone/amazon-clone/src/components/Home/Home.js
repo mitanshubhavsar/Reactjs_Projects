@@ -1,16 +1,47 @@
 import React from 'react';
 import './Home.css';
 import Product from '../Product/Product';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-          alt="amazon-banner"
-        />
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          interval={2000}
+          showArrows={false}
+          showStatus={false}
+          showThumbs={false}
+        >
+          <img
+            className="home__image"
+            src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+            alt="amazon-banner"
+          />
+          <img
+            className="home__image_large"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Fashion/Diwali-Wave3/TEASER/TopBanner/Revised/PC_top-banner._CB450572186_.jpg"
+            alt="banner"
+          />
+          <img
+            className="home__image_large"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/TVs/AugustART/central_teaser/revised/freedom_sale_teaser_page_PC_rec._CB439510861_._SL1280_FMjpg_.jpg"
+            alt="banner"
+          />
+          <img
+            className="home__image_large"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Fashion/AugART19/Teaser/GW/freedom_sale_teaser_page_PC_14._CB439497099_._SL1280_FMjpg_.jpg"
+            alt="banner"
+          />
+          <img
+            className="home__image_large"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Consumables/AugART/Headers/PC_rec_pantry._SL1280_FMpng_.png"
+            alt="banner"
+          />
+        </Carousel>
 
         <div className="home__row">
           <Product
