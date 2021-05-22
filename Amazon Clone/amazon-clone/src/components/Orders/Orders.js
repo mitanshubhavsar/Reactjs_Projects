@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import './Orders.css';
 import { useStateValue } from '../../ContextAPI/StateProvider';
 import { db } from '../../firebase';
 import Order from '../Order/Order';
+import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 
 function Orders() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -29,10 +31,18 @@ function Orders() {
   return (
     <div className="orders">
       <h1>Your Orders</h1>
-
       <div className="orders__order">
         {orders?.map((order) => (
           <Order order={order} />
+        ))}
+        {basket.map((item) => (
+          <CheckoutProduct
+            id={item.id}
+            title={item.title}
+            image={item.image}
+            price={item.price}
+            rating={item.rating}
+          />
         ))}
       </div>
     </div>
