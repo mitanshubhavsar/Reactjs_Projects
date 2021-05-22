@@ -11,7 +11,7 @@ function Footer() {
         </span>
       </div>
       <div className="footer-link-wrapper">
-        <div class="footer-link-items">
+        <div className="footer-link-items">
           <div className="footer-link-heading">Get to Know Us</div>
           <ul>
             <li>
@@ -32,7 +32,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-links-spacer"></div>
-        <div class="footer-link-items">
+        <div className="footer-link-items">
           <div className="footer-link-heading">Contact with Us</div>
           <ul>
             <li>
@@ -47,7 +47,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-links-spacer"></div>
-        <div class="footer-link-items">
+        <div className="footer-link-items">
           <div className="footer-link-heading">Make Money with Us</div>
           <ul>
             <li>
@@ -74,7 +74,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-links-spacer"></div>
-        <div class="footer-link-items">
+        <div className="footer-link-items">
           <div className="footer-link-heading">Let Us Help You</div>
           <ul>
             <li>

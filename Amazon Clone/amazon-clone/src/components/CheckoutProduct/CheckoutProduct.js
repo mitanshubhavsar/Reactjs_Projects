@@ -4,7 +4,7 @@ import { useStateValue } from '../../ContextAPI/StateProvider';
 
 const CheckoutProduct = forwardRef(
   ({ id, image, title, price, rating, hideButton }, ref) => {
-    const [{ basket }, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
       // remove the item from the basket
@@ -28,7 +28,7 @@ const CheckoutProduct = forwardRef(
             {Array(rating)
               .fill()
               .map((_, i) => (
-                <p>★</p>
+                <p key={i}>★</p>
               ))}
           </div>
           {!hideButton && (

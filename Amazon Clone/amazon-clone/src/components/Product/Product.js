@@ -3,7 +3,7 @@ import { useStateValue } from '../../ContextAPI/StateProvider';
 import './Product.css';
 
 function Product({ id, title, image, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
   const addToBasket = () => {
     //dispatch the item into the Data Layer
@@ -30,7 +30,7 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>★</p>
+              <p key={i}>★</p>
             ))}
         </div>
       </div>

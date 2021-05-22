@@ -18,11 +18,10 @@ const promise = loadStripe(
 );
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
   useEffect(() => {
     //will only runs when the app component loads...
     auth.onAuthStateChanged((authUser) => {
-      console.log('Hii User is', authUser);
       if (authUser) {
         //the user just logged in/the user was logged in
         dispatch({
@@ -37,7 +36,7 @@ function App() {
         //the user is logged out
       }
     });
-  }, []);
+  }, [dispatch]);
   return (
     //BEM convention
     <Router>

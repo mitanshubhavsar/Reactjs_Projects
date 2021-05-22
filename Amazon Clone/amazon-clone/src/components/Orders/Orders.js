@@ -6,7 +6,7 @@ import Order from '../Order/Order';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 
 function Orders() {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [{ basket, user }] = useStateValue();
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
