@@ -28,3 +28,6 @@ To add messages in Rooms through Firebase Cloud Database:
 			Field:timestamp(value) type:timestamp => select date & time
 
 		In this format you may add messages in different rooms as per your wish
+
+
+Deployed app http://whatsapp-clone-6ab4d.web.app
