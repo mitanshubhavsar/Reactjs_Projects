@@ -74,6 +74,9 @@ In the Folder the_burger_builder_app ;
 	9. For Running a test:
 		In the Folder the_burger_builder_app :
 			1.npm test
+
+
+Deployed Application https://my-burger-builder-46453.web.app
 		
 
 	
