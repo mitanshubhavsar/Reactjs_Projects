@@ -4,3 +4,6 @@ How to start the project.
 2.To start Json-server to serve data need in Json-Server: json-server --watch db.json -d 2000 -p 3001
 
 here for json server command -d flag for delay in ms and -p for port number at which the server should run
+
+Deployed Json-server at https://immense-shore-37974.herokuapp.com/
+Deployed application at https://confusion-restaurant-web.firebaseapp.com
