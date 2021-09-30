@@ -12,7 +12,7 @@ function Signup() {
             Back to Login
           </Link>
           <div className="card-body">
-            <h2 className="title">Registration Form</h2>
+            <h2 className="signup__title">Registration Form</h2>
             <form method="POST">
               <div className="row-signup row-space">
                 <div className="col-2-signup">

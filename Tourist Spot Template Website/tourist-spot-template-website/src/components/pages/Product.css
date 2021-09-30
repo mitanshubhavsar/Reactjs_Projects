@@ -1,0 +1,54 @@
+.products__heading {
+  margin-top: 3%;
+  margin-bottom: -3%;
+}
+
+.banners {
+  margin-top: 10%;
+}
+
+.banner {
+  top: -45px;
+  position: relative;
+}
+
+.banner .label {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  margin-top: -38px;
+  right: 0;
+  text-transform: uppercase;
+}
+
+.banner .label .title {
+  font-size: 30px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.banner .label .price span {
+  display: block;
+  font-size: 24px;
+  padding-top: 3px;
+}
+
+.banner a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c73430;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #e5e5e5;
+  padding: 5px 18px 4px;
+  margin-top: 25px;
+  border-radius: 13px;
+}
+
+.banner a:hover {
+  background-color: #c73430;
+  color: #fff;
+}
